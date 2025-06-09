@@ -6,7 +6,6 @@ def odd_or_even():
        print("even")
     else:
         print("odd")
-    
 
 
 
@@ -54,17 +53,38 @@ def count_digits(d):
     return count
 d = "ihaveMango456"
 
-
-
-
+def count_d(d):
+    count = 0
+    for dig in d:
+        if dig.isdigit() and int(dig)%2 == 0:
+            count+=1
+    return count
 
 # Reverse a list without .reverse()
 def reverse_list():
     a = [2, 4, 6, 8, 10]
     print("Reversed list:", a[::-1])
 
+    
+# Print all prime numbers between 1 and 100.
+def prime():
+    for num in range(2,101):
+        is_prime = True
+        for i in range(2, int(num ** 0)+1):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            print(num, end='')
+            
+            
+# Revere a String
+def reverse_string():
+    a = "jack_sparrow"
+    print("Reversed String:", a[::-1])
+    
 if __name__ == "__main__":
-    reverse_list()
-
+    reverse_string()
+        
 
 
