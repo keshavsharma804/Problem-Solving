@@ -53,12 +53,7 @@ def count_digits(d):
     return count
 d = "ihaveMango456"
 
-def count_d(d):
-    count = 0
-    for dig in d:
-        if dig.isdigit() and int(dig)%2 == 0:
-            count+=1
-    return count
+
 
 # Reverse a list without .reverse()
 def reverse_list():
